@@ -1,7 +1,7 @@
 function figsupp
 close all;
 
-sim_open_basis(0, 1)
+sim_open_basis()
 
 sim_wernle(0, 1)
 

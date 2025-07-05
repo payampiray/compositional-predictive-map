@@ -1,26 +1,15 @@
-function sim_open_basis(draw_main, draw_supplementary)
-if nargin<2, draw_main = 1; draw_supplementary = 1; end
+function sim_open_basis()
 
 f = get_base();
 lxy = f.lxy;
 J = f.J;
 
 idx_main = [19 31:39];
-idx_supp = 1:50;
-idx_supp(idx_main) = [];
 
-if draw_main
-    close all;
-    fsiz = [0 0 .3 .45];
-    figure; set(gcf,'units','normalized'); set(gcf,'position',fsiz);
-    plot_maps(J(:, idx_main), lxy);
-end
-
-if draw_supplementary
-    fsiz = [0 0 .6 1];
-    figure; set(gcf,'units','normalized'); set(gcf,'position',fsiz);
-    plot_all(J(:, idx_supp))
-end
+close all;
+fsiz = [0 0 .3 .45];
+figure; set(gcf,'units','normalized'); set(gcf,'position',fsiz);
+plot_maps(J(:, idx_main), lxy);
 
 end
 
