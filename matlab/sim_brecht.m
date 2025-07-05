@@ -50,7 +50,7 @@ if draw_supplementary
 end
 
 if draw_main 
-    close all;
+    
     fs = 16;
     fsy = 24;
 

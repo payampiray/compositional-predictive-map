@@ -21,7 +21,6 @@ if draw_main
     fsy = 16;
     
     
-    close all;
     fsiz = [0 0 .29 .29];
     figure; set(gcf,'units','normalized'); set(gcf,'position',fsiz);
     imagesc(turning_mat, [-.2 1]);

@@ -41,7 +41,7 @@ if draw_supplementary
 end
 
 if draw_main
-    close all;
+    
     plot_bars(ma, ea, mg, eg, mc, ec, attraction, distance)
     
     plot_bars(data_ma, 0, data_mg, data_eg)
